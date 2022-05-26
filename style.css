@@ -1,0 +1,198 @@
+
+/* ==================CONFIGURAÇÕES GLOBAIS ===================*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  
+  --primary-color:hsl(228, 15%, 38%);
+  --second-color:hsl(348, 100%, 66%);
+  --tertiary-color:hsl(0, 0%, 90%);
+  --span-color:hsl(258, 14%, 77%);
+  --border-color:hsl(240, 24%, 92%);
+ 
+}
+
+
+/* FONTES */
+ h1, legend{
+  font-family:'Staatliches',sans-serif;
+ }
+
+p,label,span{
+  font-family: 'Poppins',sans-serif;
+}
+
+
+body{
+  background: var(--tertiary-color);
+  width: 100%;
+  
+  
+  
+}
+
+body::before{
+  content: '';
+  background: var(--primary-color);
+  width: 100%;
+  height: 27.25rem;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+
+}
+
+/* TAMANHO DA PAGINA */
+.page{
+  width: 46.875rem;
+  margin: 8.75rem auto 0 auto;
+
+  
+}
+
+
+
+
+
+/* =============== HEADER ===========*/
+header{
+  width: 21rem;
+  
+  margin-bottom: 3.6rem;
+  
+}
+
+header h1{
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 1.125rem ;
+}
+
+header p{
+  color: #fff;
+  font-size: 1.25;
+  font-style: normal;
+  
+}
+
+
+
+/* =============== FORMULARIO ===========*/
+
+form{
+  border-radius: 1.25rem 1.25rem 0 0; 
+  background: #fff;
+  padding: 4rem;
+  
+}
+
+form fieldset{
+  border: none;
+}
+
+form fieldset legend{
+  border-bottom: 1px solid var(--border-color);
+  padding: 0 0 1rem 0;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  line-height: 2.125rem;
+
+  margin-bottom: 2.25rem;
+  margin-top: 1.875rem;
+}
+
+
+/* =============== FIELD WRAPPER ===========*/
+
+.field-wrapper{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.field-wrapper .col-2{
+  display: flex;
+  gap: 1.375rem;
+  justify-content: space-between;
+  
+}
+
+
+
+fieldset .col-2 .input-wrapper input{
+  width: 18.75rem;
+}
+
+.field-wrapper .col-3{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.field-wrapper .col-3 div:nth-child(1){
+  width: 18.75rem;
+  margin-right: 2rem;
+}
+
+.field-wrapper .col-3 div:nth-child(2),.field-wrapper .col-3 div:nth-child(3){
+    width: 8rem;
+}
+
+
+
+/* =============== INPUT WRAPPER ===========*/
+
+.input-wrapper input{
+  width: 100%;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  background: #FAFAFC;
+
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+.input-wrapper label{
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: hsl(260, 9%, 32%);
+  
+}
+
+.input-wrapper label span{
+  margin-left: 0.563rem;
+  color: var(--span-color);
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+
+}
+
+
+
+/* =============== FOOTER ===========*/
+
+.footer{
+  width: 46.875rem;
+  height: 10rem;
+  background: var(--primary-color );
+  padding: 4rem;
+  margin-bottom: 1rem;
+  border-radius: 0 0 1.25rem 1.25rem;
+}
+
+.footer .button{
+  width: 38rem;
+  height: 3.478rem;
+  background: var(--second-color);
+  border: none;
+  border-radius: 1.25rem;
+  font-size: 1.25rem;
+  color: white;
+}
